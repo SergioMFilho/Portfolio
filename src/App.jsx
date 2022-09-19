@@ -1,33 +1,57 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+   <body>
+    <header>
+      <div className='grid-layout'>
+
+        <nav>
+          <div id='logo'>Sérgio Medeiros</div>
+          <div className='menu'>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul className='nav-list'>
+            <li><a href="">Quem sou</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Conhecimentos</a></li>
+          </ul>
+        </nav>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </header>
+
+    <main>
+
+    </main>
+      <section id='s-home'>
+        <div className='grid-layout'>
+          <div id='home'>
+            <div id='home-container-text'>
+              <h1 className='delayMediumReveal'>
+                  Olá, eu sou<br/>
+                    <span id='home-name'>Sérgio Medeiros</span><br/>
+                    <span className='typewriter'>Front-end developer.</span>
+              </h1>
+              <a href="">GitHub</a>
+            </div>
+            <div id="home-container-photo">
+              <div id="home-photo">
+                <img
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+   </body>
   )
 }
 
