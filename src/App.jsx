@@ -42,15 +42,63 @@ function App() {
             </div>
             <div id="home-container-photo">
               <div id="home-photo">
-                <img
-                />
+                <img/>
               </div>
             </div>
           </div>
         </div>
       </section>
       
-
+      <section id='s-about'>
+        <div className='grid-layout'>
+          <div id='about'>
+            <div id='about-photo'>
+             <img
+                src="assets/image/iuricode.svg"
+                width="400px"
+                height="400px"
+                alt="ilustração Sérgio"
+                class="delayMediumReveal"
+                id="photo-sergio"
+              />
+              <div className='about-figure figure-one icon-one delayExtraBigReveal'>
+                <img
+                    src="assets/icons/html-cor.svg"
+                    width="45px"
+                    height="45px"
+                    alt="ícone html"
+                  />
+              </div>
+              <div className='about-figure figure-two icon-two delayExtraBigReveal'>
+                <img
+                  src="assets/icons/css-cor.svg"
+                  width="45px"
+                  height="45px"
+                  alt="ícone css"
+                />
+              </div>
+              <div className='about-figure figure-three icon-three delayExtraBigReveal'>
+                <img
+                  src="assets/icons/js-cor.svg"
+                  width="45px"
+                  height="45px"
+                  alt="ícone javascript"
+                />
+              </div>
+            </div>
+            <article id='about-text'>
+              <h2 class="delaySmallReveal">Quem sou <span>.</span></h2>
+              <p class="delayMediumReveal">
+                Meu nome é Sérgio Medeiros. 
+                Sou Web Developer com foco em front-end em busca do meu 
+                primeiro estágio/emprego.Desenvolvo interfaces modernas e
+                 de alta qualidade, com foco na performance e na responsividade.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      
    </body>
   )
 }

@@ -1,4 +1,36 @@
 
+header .grid-layout nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 8vh;
+padding: 0 8px;
+}
+
+header .grid-layout nav .nav-list {
+list-style: none;
+display: flex;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#logo {
+  margin-left: 50px;
+}
+
+.nav-list li a {
+  margin-right: 50px;
+
+}
+
+
 nav{
 
 }
@@ -28,6 +60,62 @@ nav{
 }
 
 #home-container-text {
+
+}
+
+.delayMediumReveal {
+
+}
+
+.home-name {
+
+}
+
+.typewriter {
+
+}
+
+.home-container-photo {
+
+}
+
+.homephoto {
+
+}
+
+#s-about {
+
+}
+
+#about {
+
+}
+
+#about-photo {
+
+}
+
+#photo-sergio {
+
+}
+
+.about-figure figure-one icon-one delayExtraBigReveal {
+
+}
+
+.about-figure figure-two icon-two delayExtraBigReveal {
+
+}
+
+.about-figure figure-three icon-three delayExtraBigReveal {
+
+}
+
+#about-text {
+
+}
+
+.delaySmallReveal {
 
 }
 
