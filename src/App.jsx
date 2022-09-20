@@ -94,6 +94,7 @@ function App() {
                 primeiro estágio/emprego.Desenvolvo interfaces modernas e
                  de alta qualidade, com foco na performance e na responsividade.
               </p>
+            
             </article>
           </div>
         </div>
