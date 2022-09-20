@@ -33,6 +33,7 @@ function App() {
         <div className='grid-layout'>
           <div id='home'>
             <div id='home-container-text'>
+            <div id='sergio'></div>
               <h1 className='delayMediumReveal'>
                   Olá, eu sou<br/>
                     <span id='home-name'>Sérgio Medeiros</span><br/>
@@ -99,7 +100,7 @@ function App() {
           </div>
         </div>
       </section>
-      <div id='sergio'></div>
+      
    </body>
   )
 }

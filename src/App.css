@@ -1,23 +1,19 @@
 body {
   font-family:"Saira";background-color:#fafafa
-  }
+}
 
-  ::-webkit-scrollbar {
-    width:8px
-    }
-    ::-webkit-scrollbar-track {
-    background-color:#06090f
-    }
-    ::-webkit-scrollbar-thumb {
-    background-color:#00a3ff;border-radius:8px
-    }
+@media screen and (max-width: 992px){
+   header{padding:0px 16px}
+}
+
+
 
 ::selection{
   background-color:#00a3ff;
   color:#fafafa;
 }
 #logo {
-  color: #00a3ff;
+  color: #fff;
 }
 
 header{
@@ -30,7 +26,7 @@ header{
 
 header .grid-layout nav {
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 flex-wrap: wrap;
 height: 8vh;
@@ -50,18 +46,48 @@ ul {
   padding-inline-start: 40px;
 }
 
+header .grid-layout nav{
+display:flex;justify-content:space-evenly;align-items:center;flex-wrap:wrap;height:8vh;padding:0px 8px;
+}
+
+.nav-list li a{
+font-size: 1rem;
+color:#fff;
+position:relative;
+
+}
+.nav-list li a::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  transform:scaleX(0);
+  height:1px;
+  bottom:-7px;
+  left:0;
+  background:linear-gradient(270deg, red 0%, #17161d 100%);
+  transform-origin:bottom right;
+  transition:transform 0.7s cubic-bezier(0.86, 0, 0.07, 1)
+  }
+.nav-list li a:hover::after{
+  transform:scaleX(1);
+  transform-origin:bottom left;
+  }
+ .nav-list li a:hover{
+  color:#fafafa
+  }
+
 button:focus,input:focus {
   border:0
   }
 
 #logo {
-  padding-left: 50px;
+
 }
 
 .nav-list li a {
-  padding-right: 50px;
-  color: #00a3ff;
+  color: #83838A;
   text-decoration: none;
+  margin-right: 50px;
 }
 
 
@@ -154,6 +180,6 @@ nav{
 }
 
 #sergio {
-  width: 900px;
-  height: 900px;
+  width: 100vh;
+  height: 60px;
 }
