@@ -32,15 +32,25 @@ function App() {
       <section id='s-home'>
         <div className='grid-layout'>
           <div id='home'>
-            <div id='home-container-text'>
-            <div id='sergio'></div>
-              <h1 className='delayMediumReveal'>
-                  Olá, eu sou<br/>
-                    <span id='home-name'>Sérgio Medeiros</span><br/>
-                    <span className='typewriter'>Front-end developer.</span>
-              </h1>
-              <a href="">GitHub</a>
-            </div>
+            <div className='text-block'>
+                <div id='home-container-text'>
+                  <h1 className='delayMediumReveal'>
+                      Olá, eu sou<br/>
+                        <span id='home-name'>Sérgio Medeiros.</span><br/>
+                        <span className='typewriter'>Front-end developer.</span>
+                  </h1>
+                  <button id='buttonGit'>
+                    <a 
+                      href="https://github.com/SergioMFilho"
+                      rel='noopener'
+                      target={"_blank"}
+                      className='buttonTransition'
+                      >
+                        GitHub
+                    </a>
+                  </button>
+                </div>
+              </div>
             <div id="home-container-photo">
               <div id="home-photo">
                 <img/>
