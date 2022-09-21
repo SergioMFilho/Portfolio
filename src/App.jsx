@@ -32,32 +32,34 @@ function App() {
       <section id='s-home'>
         <div className='grid-layout'>
           <div id='home'>
-            <div className='text-block'>
-                <div id='home-container-text'>
-                  <h1 className='delayMediumReveal'>
-                      Olá, eu sou<br/>
-                        <span id='home-name'>Sérgio Medeiros.</span><br/>
-                        <span className='typewriter'>Front-end developer.</span>
-                  </h1>
-                  <button id='buttonGit'>
-                    <a 
-                      href="https://github.com/SergioMFilho"
-                      rel='noopener'
-                      target={"_blank"}
-                      className='buttonTransition'
-                      >
-                        GitHub
-                    </a>
-                  </button>
+              <div id='home-container-text'>
+                <h1>
+                    Olá, eu sou<br/>
+                      <span id='home-name'>Sérgio Medeiros.</span><br/>
+                      <span className='typewriter'>Front-end developer.</span>
+                </h1>
+                  <a 
+                    href="https://github.com/SergioMFilho"
+                    rel='noopener'
+                    target={"_blank"}
+                    className='buttonTransition'
+                    > <button id='buttonGit'>
+                      GitHub </button>
+                  </a>
+               
+              </div>
+              <div id="home-container-photo"> 
+                <div id="home-photo">
+                  <img/>
                 </div>
               </div>
-            <div id="home-container-photo">
-              <div id="home-photo">
-                <img/>
+              <div id='s-home2'>
+                <img src='./src/assets/perfil.png'/>
               </div>
-            </div>
+           
           </div>
         </div>
+        
       </section>
       
       <section id='s-about'>
