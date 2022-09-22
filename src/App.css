@@ -80,7 +80,7 @@ align-items: center;
 }
 
 #s-home {
-  height: 600px;
+  height: 640px;
   width: 100%;
   display: block;
 }
@@ -100,12 +100,33 @@ align-items: center;
   border-radius: 50%;
   transition: all 0.7s;
   border: 2px solid red;
+  margin-top: 30px;
 }
 
 #s-home2 img:hover {
 width: 400px;
 height: 400px;
 /* transition: all 0.7s; */
+}
+
+#s-about {
+  height: 600px;
+  width: 100%;
+  background-color: #080C13;
+  display: flex;
+}
+
+#about1 {
+  width: 100%;
+  height: 100%;
+  background-color: #080C13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about2 {
+  color: #fff;
 }
 
 
