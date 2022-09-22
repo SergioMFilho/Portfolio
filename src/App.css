@@ -79,16 +79,20 @@ align-items: center;
   margin-right: 50px;
 }
 
-#s-home {
-  height: 640px;
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  overflow: hidden;
   width: 100%;
-  display: block;
+  background-color: #06090F;
 }
 
 #s-home2{
   color: #fafafa;
   width: 50%;
-  height: 600px;
+  height: 7 00px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,10 +118,12 @@ height: 330px;
   width: 100%;
   background-color: #080C13;
   display: flex;
+  justify-content: center;
+  align-items: center ;
 }
 
 #about1 {
-  width: 100%;
+  width: 50%;
   height: 100%;
   background-color: #080C13;
   display: flex;
@@ -127,7 +133,7 @@ height: 330px;
 
 #about2 {
   color: #fff;
-  width: 400px;
+  width: 40%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -146,9 +152,44 @@ height: 330px;
 color: red;
 }
 
+#about-text {
+  width: 400px;
+}
+
 #avatar {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
+  transition: all 0.7s;
+  margin-top: 30px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+#imgReact {
+  position: absolute;
+  left: 320px;
+  bottom: -200px;
+  animation: go-back 2.5s infinite alternate;
+}
+
+#imgJs {
+  position: absolute;
+  left: 550px;
+  bottom: -200px;
+  animation: go-back 3s infinite alternate;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#avatar:hover {
+  width: 380px;
+  height: 380px;
 }
 
 #home-container-text {
@@ -158,51 +199,6 @@ padding-left: 215px;
 /* opacity: 0;  */
 animation: fadeInText 0s 1.1s both;
 display: flex;
-}
-
-/* .text-block {
-  position: relative;
-  overflow: hidden;
-}
-
-.text-block:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #06090F;
-  transform: translateX(-100%);
-  animation: revealBlock 1.5s 1.1s both;
-}
-
-@keyframes fadeInText {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes revealBlock {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-} */
-
-#s-home .grid-layout #home {
-  display: flex;
-  align-items: center;
-  height: 90vh;
-  /* overflow: hidden; */
-  width: 100%;
-  background-color: #06090F;
-  display: flex;
 }
 
 #home-name {
@@ -226,7 +222,7 @@ font-weight: 500;
   padding: 15px 30px;
   color: #fff;
   border: 1px solid red;
-  transition: all 0.7s;
+  transition: 1s;
 }
 
 #buttonGit:hover {

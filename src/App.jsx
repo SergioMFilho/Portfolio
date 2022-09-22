@@ -29,9 +29,8 @@ function App() {
     <main>
 
     </main>
-      <section id='s-home'>
-        <div className='grid-layout'>
-          <div id='home'>
+      <section id='home'>
+          <div id='home1'>
               <div id='home-container-text'>
                 <h1>
                     Olá, eu sou<br/>
@@ -46,38 +45,47 @@ function App() {
                     > <button id='buttonGit'>
                       GitHub </button>
                   </a>
-               
               </div>
-              <div id="home-container-photo"> 
-                <div id="home-photo">
-                  <img/>
-                </div>
-              </div>
-              <div id='s-home2'>
-                <img src='./src/assets/perfil.png'/>
-              </div>
-           
           </div>
-        </div>
+          <div id='s-home2'>
+                <img src='./src/assets/perfil.png'/>
+          </div>
+       
         
       </section>
       
       <section id='s-about'>
         <div id='about1'>
-
+            <img      
+                  id='imgReact'
+                  src="./src/assets/react.svg"
+                  width="45px"
+                  height="45px"
+                  alt="ícone react"
+                />
+            <img      
+                  id='imgJs'
+                  src="./src/assets/js.png"
+                  width="45px"
+                  height="45px"
+                  alt="ícone js"
+                />
             <img src="./src/assets/avatarsergio.png" id='avatar' alt="" />
-            <div id='about2'>
-              <h2 class="about-h2">Quem sou <span id='about-h2-span'>.</span></h2>
-              <p class="about-p">
-                Meu nome é Sérgio Medeiros. 
-                Sou Web Developer com foco em front-end em busca do meu 
-                primeiro estágio/emprego.Desenvolvo interfaces modernas e
-                 de alta qualidade, com foco na performance e na responsividade.
-              </p>
-
-
+            <div class="about-figure figure-one icon-one delayExtraBigReveal">
             </div>
+            
+        </div>
+        <div id='about2'>
+          <div id='about-text'>
+            <h2 class="about-h2">Quem sou <span id='about-h2-span'>.</span></h2>
+            <p class="about-p">
+              Meu nome é Sérgio Medeiros. 
+              Sou Web Developer com foco em front-end em busca do meu 
+              primeiro estágio/emprego.Desenvolvo interfaces modernas e
+              de alta qualidade, com foco na performance e na responsividade.
+            </p>
           </div>
+        </div>    
       </section>
       
    </body>
