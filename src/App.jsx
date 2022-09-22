@@ -65,17 +65,17 @@ function App() {
       <section id='s-about'>
         <div id='about1'>
 
-            <img src="" alt="" />
-            <div id='about1'>
-              <h2 class="delaySmallReveal">Quem sou <span>.</span></h2>
-              <p class="delayMediumReveal">
+            <img src="./src/assets/avatarsergio.png" id='avatar' alt="" />
+            <div id='about2'>
+              <h2 class="about-h2">Quem sou <span id='about-h2-span'>.</span></h2>
+              <p class="about-p">
                 Meu nome é Sérgio Medeiros. 
                 Sou Web Developer com foco em front-end em busca do meu 
                 primeiro estágio/emprego.Desenvolvo interfaces modernas e
                  de alta qualidade, com foco na performance e na responsividade.
               </p>
 
-            
+
             </div>
           </div>
       </section>
