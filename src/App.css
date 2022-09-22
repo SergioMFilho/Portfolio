@@ -238,10 +238,55 @@ color: red;
 #projects {
   height: 700px;
   width: 100%;
-  background-color: #06090F;
+  background-color: #06090F;  
+}
+
+#aroundProjects {
+  width: 100%;
+  height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center ;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+#projectCards {
+}
+
+.cardPetShop {
+  width: 340px;
+  height: 280px;
+  border: 1px solid red;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cardCount {
+  width: 340px;
+  height: 280px;
+  border: 1px solid red;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cardList {
+  width: 340px;
+  height: 280px;
+  border: 1px solid red;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+#divh2 {
+  width: 100%;
+  
 }
 
 #projects h2 {
@@ -251,6 +296,12 @@ color: red;
 
 #projects h2 span {
   color: red;
+}
+
+#projectCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .delayMediumReveal {

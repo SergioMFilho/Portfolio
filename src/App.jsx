@@ -84,11 +84,33 @@ function App() {
       </section>
       
       <section id='projects'>
-          <h2>Projetos<span>.</span></h2>
-          <div id='projectCards'>
-            <article  className=''>
-
-            </article>
+          <div id='divH2'>
+            <h2>Projetos<span>.</span></h2>
+          </div>
+          <div id='aroundProjects'>
+            <div id='projectCards'>
+              <article  className='cardPetShop'>
+                <h3>PetShopReact</h3>
+                <p>
+                  Site petshop, feito em React e JavaScript.
+                </p>
+                <a href="">Visualizar Projeto</a>
+              </article>
+              <article  className='cardCount'>
+                <h3>Countdown</h3>
+                <p>
+                  Site de contagem regressiva, feito em React e JavaScript.
+                </p>
+                <a href="">Visualizar Projeto</a>
+              </article>
+              <article  className='cardList'>
+                <h3>Lista de Presença</h3>
+                <p>
+                  Site de lista de presença, feito em React e JavaScript.
+                </p>
+                <a href="">Visualizar Projeto</a>
+              </article>
+            </div>
           </div>
       </section>
 
