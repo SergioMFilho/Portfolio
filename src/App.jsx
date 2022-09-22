@@ -11,14 +11,9 @@ function App() {
 
         <nav>
           <div id='logo'>Sérgio Medeiros</div>
-          <div className='menu'>
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
           <ul className='nav-list'>
-            <li><a href="">Quem sou</a></li>
-            <li><a href="">Projetos</a></li>
+            <li><a href="#about">Quem sou</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><a href="">Serviços</a></li>
             <li><a href="">Conhecimentos</a></li>
           </ul>
@@ -34,7 +29,7 @@ function App() {
               <div id='home-container-text'>
                 <h1>
                     Olá, eu sou<br/>
-                      <span id='home-name'>Sérgio Medeiros.</span><br/>
+                      <span id='home-name'>Sérgio Medeiros<span>.</span></span><br/>
                       <span className='typewriter'>Front-end developer.</span>
                 </h1>
                   <a 
@@ -54,7 +49,7 @@ function App() {
         
       </section>
       
-      <section id='s-about'>
+      <section id='about'>
         <div id='about1'>
             <img      
                   id='imgReact'
@@ -88,6 +83,15 @@ function App() {
         </div>    
       </section>
       
+      <section id='projects'>
+          <h2>Projetos<span>.</span></h2>
+          <div id='projectCards'>
+            <article  className=''>
+
+            </article>
+          </div>
+      </section>
+
    </body>
   )
 }

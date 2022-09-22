@@ -113,7 +113,50 @@ height: 330px;
 /* transition: all 0.7s; */
 }
 
-#s-about {
+#home-container-text {
+  flex-direction: column;
+  color: #fff;
+  padding-left: 215px;
+  /* opacity: 0;  */
+  animation: fadeInText 0s 1.1s both;
+  display: flex;
+  }
+  
+  #home-name {
+  font-size: 3.0rem;
+  font-weight: 500;
+  }
+  
+  #home-name span {
+  color: red;
+  }
+
+  #buttonGit {
+    width: 120px;
+    background: linear-gradient(89.16deg, #06090F -7.21%, red 148.5%);
+    backdrop-filter: blur(10px);
+    margin-top: 25px;
+    padding: 15px 30px;
+    color: #fff;
+    border: 1px solid red;
+    transition: 1s;
+  }
+  
+  #buttonGit:hover {
+    box-shadow: 0 0 2px #fff;
+   
+    width: 200px;
+    
+  
+  }
+  
+  #home-container-text a {
+    color: #fafafa
+      
+  }
+  
+
+#about {
   height: 700px;
   width: 100%;
   background-color: #080C13;
@@ -192,20 +235,23 @@ color: red;
   height: 380px;
 }
 
-#home-container-text {
-flex-direction: column;
-color: #fff;
-padding-left: 215px;
-/* opacity: 0;  */
-animation: fadeInText 0s 1.1s both;
-display: flex;
+#projects {
+  height: 700px;
+  width: 100%;
+  background-color: #06090F;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
 }
 
-#home-name {
-font-size: 3.0rem;
-font-weight: 500;
+#projects h2 {
+  font-size: 2.5rem;
+  padding-bottom: 24px;
 }
 
+#projects h2 span {
+  color: red;
+}
 
 .delayMediumReveal {
   visibility: visible;
@@ -214,26 +260,3 @@ font-weight: 500;
   transition: opacity 2s ease-in-out 0.3s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.3s;
 }
 
-#buttonGit {
-  width: 120px;
-  background: linear-gradient(89.16deg, #06090F -7.21%, red 148.5%);
-  backdrop-filter: blur(10px);
-  margin-top: 25px;
-  padding: 15px 30px;
-  color: #fff;
-  border: 1px solid red;
-  transition: 1s;
-}
-
-#buttonGit:hover {
-  box-shadow: 0 0 2px #fff;
- 
-  width: 200px;
-  
-
-}
-
-#home-container-text a {
-  color: #fafafa
-    
-}

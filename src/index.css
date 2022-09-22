@@ -2,3 +2,7 @@
    margin:0;
    font-family:"Saira";
 }
+
+h1, h2, span {
+   color: #fff;
+ }
