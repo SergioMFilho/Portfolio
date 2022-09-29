@@ -113,12 +113,12 @@ height: 330px;
 /* transition: all 0.7s; */
 }
 
+
+
 #home-container-text {
   flex-direction: column;
   color: #fff;
   padding-left: 215px;
-  /* opacity: 0;  */
-  animation: fadeInText 0s 1.1s both;
   display: flex;
   }
   
@@ -127,6 +127,23 @@ height: 330px;
   font-weight: 500;
   }
   
+.typewriter {
+  border-right: 3px solid rgba(255,255,255,.75);
+}
+
+.typing-animation {
+  animation: blinkCursor 600ms infinite normal;
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: rgba(255, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
   #home-name span {
   color: red;
   }
@@ -248,9 +265,6 @@ color: red;
   justify-content: space-around;
   align-items: center;
 
-}
-
-#projectCards {
 }
 
 .cardPetShop {

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Card from '../Components/Card.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,10 +28,10 @@ function App() {
       <section id='home'>
           <div id='home1'>
               <div id='home-container-text'>
-                <h1>
+                <h1 className='line'>
                     Olá, eu sou<br/>
                       <span id='home-name'>Sérgio Medeiros<span>.</span></span><br/>
-                      <span className='typewriter'>Front-end developer.</span>
+                      <span className='typewriter typing-animation'>Front-end developer.</span>
                 </h1>
                   <a 
                     href="https://github.com/SergioMFilho"
@@ -89,13 +90,14 @@ function App() {
           </div>
           <div id='aroundProjects'>
             <div id='projectCards'>
-              <article  className='cardPetShop'>
+              <Card nameProject='dekdoeko' descricao='dededed'/>
+              {/* <article  className='cardPetShop'>
                 <h3>PetShopReact</h3>
                 <p>
                   Site petshop, feito em React e JavaScript.
                 </p>
                 <a href="">Visualizar Projeto</a>
-              </article>
+              </article> */}
               <article  className='cardCount'>
                 <h3>Countdown</h3>
                 <p>
