@@ -13,7 +13,7 @@ body {
 
 
 header{
-  background: #0E0F1C;
+  background: #040405;
   backdrop-filter:blur(24px);
   -webkit-backdrop-filter:blur(24px);
   border-bottom:1px solid rgba(114,114,126,0.2);
@@ -92,7 +92,7 @@ align-items: center;
 #s-home2{
   color: #fafafa;
   width: 50%;
-  height: 7 00px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,11 +129,12 @@ height: 330px;
   
 .typewriter {
   border-right: 3px solid rgba(255,255,255,.75);
+  
 }
 
 .typing-animation {
-  animation: blinkCursor 600ms infinite normal;
-}
+  animation: blinkCursor 600ms infinite normal; 
+} 
 
 @keyframes blinkCursor{
   from {
@@ -221,22 +222,9 @@ color: red;
   height: 350px;
   transition: all 0.7s;
   margin-top: 30px;
-  border-radius: 10px;
+  border-radius: 50%;
   position: absolute;
-}
-
-#imgReact {
-  position: absolute;
-  left: 320px;
-  bottom: -200px;
-  animation: go-back 2.5s infinite alternate;
-}
-
-#imgJs {
-  position: absolute;
-  left: 550px;
-  bottom: -200px;
-  animation: go-back 3s infinite alternate;
+  border: 1px solid red;
 }
 
 @keyframes go-back {
@@ -267,45 +255,18 @@ color: red;
 
 }
 
-.cardPetShop {
-  width: 340px;
-  height: 280px;
-  border: 1px solid red;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.cardCount {
-  width: 340px;
-  height: 280px;
-  border: 1px solid red;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.cardList {
-  width: 340px;
-  height: 280px;
-  border: 1px solid red;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
 
 #divh2 {
   width: 100%;
-  
 }
 
+
 #projects h2 {
+  padding-top: 100px;
   font-size: 2.5rem;
-  padding-bottom: 24px;
+  padding-bottom: 24px;  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects h2 span {
