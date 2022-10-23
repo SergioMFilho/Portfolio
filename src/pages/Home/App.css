@@ -83,16 +83,16 @@ align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 650px;
+  height: 100vh;
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   background-color: #06090F;
 }
 
 #s-home2{
   color: #fafafa;
   width: 50%;
-  height: 700px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +175,7 @@ height: 330px;
   
 
 #about {
-  height: 700px;
+  height: 100vh;
   width: 100%;
   background-color: #080C13;
   display: flex;
