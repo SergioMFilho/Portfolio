@@ -16,9 +16,6 @@ function App() {
                 <a href="#projects">Projetos</a>
               </li>
               <li>
-                <a href="">Serviços</a>
-              </li>
-              <li>
                 <a href="">Conhecimentos</a>
               </li>
             </ul>
@@ -53,14 +50,14 @@ function App() {
           </div>
         </div>
         <div id="s-home2">
-          <img src="./src/assets/perfil.png" />
+          <img src="../../../public/assets/perfil.png" />
         </div>
       </section>
 
       <section id="about">
         <div id="about1">
           <img
-            src="./src/assets/avatarsergio.png"
+            src="../../../public/assets/avatarsergio.png"
             id="avatar"
             alt="ImagemAvatar"
           />
