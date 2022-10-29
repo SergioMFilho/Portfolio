@@ -1,5 +1,5 @@
 import "./App.css";
-import Card from "../../Components/Card/Card";
+// import Card from "../../Components/Card/Card";
 
 function App() {
   return (
@@ -89,7 +89,7 @@ function App() {
         </div>
         <div id="aroundProjects">
           <div id="projectCards">
-            <Card
+            {/* <Card
               nameProject="SM-computers"
               descricao="Site de venda de dispositivos eletrônicos, criado em angular."
               link="https://jolly-raindrop-ce5c3a.netlify.app/"
@@ -103,7 +103,7 @@ function App() {
               nameProject="Lista de Presença"
               descricao="Uma lista de presença para registro de eventos, criado em React."
               link="https://listadepresencasm.netlify.app"
-            />
+            /> */}
           </div>
         </div>
       </section>
