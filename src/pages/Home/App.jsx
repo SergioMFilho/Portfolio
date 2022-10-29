@@ -1,5 +1,7 @@
 import "./App.css";
 // import Card from "../../Components/Card/Card";
+import perfilImage from "../../public/assets/perfil.png";
+import avatarImage from "../../public/assets/avatarsergio.png";
 
 function App() {
   return (
@@ -50,17 +52,13 @@ function App() {
           </div>
         </div>
         <div id="s-home2">
-          <img src="../../../public/assets/perfil.png" />
+          <img src={perfilImage} />
         </div>
       </section>
 
       <section id="about">
         <div id="about1">
-          <img
-            src="../../../public/assets/avatarsergio.png"
-            id="avatar"
-            alt="ImagemAvatar"
-          />
+          <img src={avatarImage} id="avatar" alt="ImagemAvatar" />
           <div className="about-figure figure-one icon-one delayExtraBigReveal"></div>
         </div>
         <div id="about2">
