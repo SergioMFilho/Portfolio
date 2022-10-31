@@ -2,10 +2,26 @@ import "./App.css";
 // import Card from "../../Components/Card/Card";
 import perfilImage from "../../public/assets/perfil.png";
 import avatarImage from "../../public/assets/avatarsergio.png";
+import panel1 from "../../public/assets/1.png";
+import panel2 from "../../public/assets/2.png";
 
 function App() {
+  const panels = document.querySelectorAll(".panel");
+
+  panels.forEach((panel) => {
+    panel.addEventListener("click", () => {
+      removeActiveClasses();
+      panel.classList.add("active");
+    });
+  });
+
+  function removeActiveClasses() {
+    panels.forEach((panel) => {
+      panel.classList.remove("active");
+    });
+  }
   return (
-    <body>
+    <div className="container">
       <header>
         <div className="grid-layout">
           <nav>
@@ -82,9 +98,55 @@ function App() {
             Projetos<span>.</span>
           </h2>
         </div>
-        <div id="aroundProjects">
-          <div id="projectCards">
-            {/* <Card
+        <div className="containerProjects">
+          <div
+            className="panel active"
+            style={{
+              backgroundImage: `url(${panel1})`,
+            }}
+          >
+            <h3>Explore The World</h3>
+          </div>
+          <div
+            className="panel"
+            style={{
+              backgroundImage: `url(${panel2})`,
+            }}
+          >
+            <h3>Explore The World</h3>
+          </div>
+          <div
+            className="panel"
+            style={{
+              backgroundImage: `url(${panel2})`,
+            }}
+          >
+            <h3>Explore The World</h3>
+          </div>
+          <div
+            className="panel"
+            style={{
+              backgroundImage: `url(
+              "https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+            )`,
+            }}
+          >
+            <h3>Explore The World</h3>
+          </div>
+          <div
+            className="panel"
+            style={{
+              backgroundImage: `url(
+              "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            )`,
+            }}
+          >
+            <h3>Explore The World</h3>
+          </div>
+
+          {/* <div id="aroundProjects">
+          <div id="projectCards"> */}
+          {/* <Card
               nameProject="SM-computers"
               descricao="Site de venda de dispositivos eletrônicos, criado em angular."
               link="https://jolly-raindrop-ce5c3a.netlify.app/"
@@ -99,10 +161,11 @@ function App() {
               descricao="Uma lista de presença para registro de eventos, criado em React."
               link="https://listadepresencasm.netlify.app"
             /> */}
-          </div>
+          {/* </div>
+        </div> */}
         </div>
       </section>
-    </body>
+    </div>
   );
 }
 
