@@ -1,25 +1,65 @@
 import "./App.css";
+
 // import Card from "../../Components/Card/Card";
 import perfilImage from "../../public/assets/perfil.png";
 import avatarImage from "../../public/assets/avatarsergio.png";
 import panel1 from "../../public/assets/1.png";
 import panel2 from "../../public/assets/2.png";
+import { useState, useEffect } from "react";
+import CustomImage from "../../Components/CustomImage/CustomImage";
 
 function App() {
-  const panels = document.querySelectorAll(".panel");
+  const [data, setData] = useState([
+    {
+      url: panel1,
+      title: "title1",
+      customClass: "panel active",
+    },
+    {
+      url: panel2,
+      title: "title2",
+      customClass: "panel",
+    },
+    {
+      url: panel1,
+      title: "title3",
+      customClass: "panel",
+    },
+    {
+      url: panel2,
+      title: "title4",
+      customClass: "panel",
+    },
+    {
+      url: panel1,
+      title: "title5",
+      customClass: "panel",
+    },
+  ]);
 
-  panels.forEach((panel) => {
-    panel.addEventListener("click", () => {
-      removeActiveClasses();
-      panel.classList.add("active");
-    });
-  });
-
-  function removeActiveClasses() {
-    panels.forEach((panel) => {
-      panel.classList.remove("active");
+  function changeHighlightImage(position) {
+    setData((oldState) => {
+      return oldState.map((item, index) => {
+        if (position === index) {
+          return {
+            ...item,
+            customClass: "panel active",
+          };
+        } else {
+          return {
+            ...item,
+            customClass: "panel",
+          };
+        }
+      });
     });
   }
+
+  // Similar ao componentDidMount e componentDidUpdate:
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
+
   return (
     <div className="container">
       <header>
@@ -99,50 +139,16 @@ function App() {
           </h2>
         </div>
         <div className="containerProjects">
-          <div
-            className="panel active"
-            style={{
-              backgroundImage: `url(${panel1})`,
-            }}
-          >
-            <h3>Explore The World</h3>
-          </div>
-          <div
-            className="panel"
-            style={{
-              backgroundImage: `url(${panel2})`,
-            }}
-          >
-            <h3>Explore The World</h3>
-          </div>
-          <div
-            className="panel"
-            style={{
-              backgroundImage: `url(${panel2})`,
-            }}
-          >
-            <h3>Explore The World</h3>
-          </div>
-          <div
-            className="panel"
-            style={{
-              backgroundImage: `url(
-              "https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
-            )`,
-            }}
-          >
-            <h3>Explore The World</h3>
-          </div>
-          <div
-            className="panel"
-            style={{
-              backgroundImage: `url(
-              "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-            )`,
-            }}
-          >
-            <h3>Explore The World</h3>
-          </div>
+          {data.map((item, index) => {
+            return (
+              <CustomImage
+                url={item.url}
+                customClass={item.customClass}
+                title={item.title}
+                onClick={() => changeHighlightImage(index)}
+              />
+            );
+          })}
 
           {/* <div id="aroundProjects">
           <div id="projectCards"> */}
